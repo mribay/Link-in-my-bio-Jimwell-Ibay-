@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background-image: url("https://i.ibb.co/0yw4Rj8/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cover {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #0f172a;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.pulse {
+   width: 22.4px;
+   height: 22.4px;
+   border-radius: 50%;
+   background: #1e293b;
+   box-shadow: 0 0 0 0 rgba(30,41,59,0.5);
+   animation: pulse-c6zlskmd 1s infinite;
+}
+
+@keyframes pulse-c6zlskmd {
+   100% {
+      box-shadow: 0 0 0 33.6px #0000;
+   }
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.item {
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+}
+
+.button {
+  height: calc(25%);
+  cursor: pointer;
+}
+
+.button:not(:last-child) {
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(255, 255 ,255, 0.1);
+}
+
+.content {
+  display: grid; 
+  grid-template-columns: 0.5fr 1.5fr; 
+  gap: 0px 0px; 
+}
+
+.content .heading {
+  position: relative;
+  top: 18px;
+}
+
+.content .image {
+  position: relative;
+  top: 12px;
+  left: 10px;
+}
+
+.image .circle {
+  
+  background-color: #ccc;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.heading .main {
+  font-weight: 800;
+}
+
+.heading .sub {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.github {
+  background-image: url("https://i.ibb.co/qD9jd9Q/github.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.vercel {
+  background-image: url("https://i.ibb.co/x8gL52L/vercel.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.facebook {
+  background-image: url("https://i.ibb.co/gw9ssHp/facebook.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.tiktok {
+  background-image: url("https://i.ibb.co/tcgbtwn/tiktok.png");
+  background-size: cover;
+  background-position: center;
+}
+
